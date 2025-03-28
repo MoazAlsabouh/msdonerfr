@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="ar">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>نظام حساب المدخول والمصاريف</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>نظام حساب المدخول والمصاريف</h1>
+    
+    <section class="time-section">
+      <h2>الفترة الزمنية</h2>
+      <label for="start-time">بداية اليوم:</label>
+      <input type="datetime-local" id="start-time">
+      <label for="end-time">نهاية اليوم:</label>
+      <input type="datetime-local" id="end-time">
+    </section>
+    
+    <section class="income-section">
+      <h2>إدخال المدخول</h2>
+      <label for="income-source">مصدر الدخل:</label>
+      <input type="text" id="income-source" placeholder="مثلاً: طلب من موقع X">
+      <label for="income-amount">المبلغ:</label>
+      <input type="number" id="income-amount" placeholder="0">
+      <button id="add-income-btn">إضافة دخل</button>
+      <ul id="income-list"></ul>
+    </section>
+    
+    <section class="expense-section">
+      <h2>إدخال المصاريف</h2>
+      <label for="expense-item">الشيء المصروف عليه:</label>
+      <input type="text" id="expense-item" placeholder="مثلاً: مواد غذائية">
+      <label for="expense-amount">المبلغ:</label>
+      <input type="number" id="expense-amount" placeholder="0">
+      <button id="add-expense-btn">إضافة مصروف</button>
+      <ul id="expense-list"></ul>
+    </section>
+    
+    <button id="submit-btn">حفظ البيانات</button>
+    
+    <div id="result"></div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
